@@ -51,6 +51,17 @@ words = random.choice(random_words).upper()
 print(words)
 print(len(words))
 
+"""
+screen message for start of the game
+"""
+print("Welcome player")
+print("The game is simple...")
+print("Correctly guess the hidden word and you win!")
+print("But you only 6 lives")
+print("Are you ready?")
+print("Let's begin!")
+print("")
+
 
 
     
