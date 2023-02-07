@@ -81,3 +81,68 @@ def hangman(life):
         print("|         ")
         print("|         ")
         print("==========")
+    if life == 1:
+        print("+======+  ")
+        print("|      |  ")
+        print("|      O  ")
+        print("|         ")
+        print("|         ")
+        print("|         ")
+        print("==========")
+    if life == 2:
+        print("+======+  ")
+        print("|      |  ")
+        print("|      O  ")
+        print("|      |  ")
+        print("|         ")
+        print("|         ")
+        print("==========")
+    if life == 3:
+        print("+======+  ")
+        print("|      |  ")
+        print("|      O  ")
+        print("|     /|  ")
+        print("|         ")
+        print("|         ")
+        print("==========")
+    if life == 4:
+        print("+======+  ")
+        print("|      |  ")
+        print("|      O  ")
+        print("|     /|\ ")
+        print("|         ")
+        print("|         ")
+        print("=========")
+    if life == 5:
+        print("+======+  ")
+        print("|      |  ")
+        print("|      O  ")
+        print("|     /|\ ")
+        print("|     /   ")
+        print("|         ")
+        print("==========")
+    if life == 6:
+        print("+======+  ")
+        print("|      |  ")
+        print("|      O  ")
+        print("|     /|\ ")
+        print("|     / \ ")
+        print("|         ")
+        print("==========")
+
+
+"""
+variables for right letter and wrong letter
+guess and the max number of lives
+"""
+correct_guess = ['_'] * len(words)
+wrong_guess = []
+lives = 6 # remove later?
+
+"""
+dashes position/letters function
+"""
+
+"""
+while loop main game
+"""
