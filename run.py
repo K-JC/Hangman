@@ -139,10 +139,19 @@ correct_guess = ['_'] * len(words)
 wrong_guess = []
 lives = 6 # remove later?
 
-"""
-dashes position/letters function
-"""
+
+def letters():
+    """
+    function for correct guess position dashes
+    """
+    for i in correct_guess:
+        print(i, end=' ')
+    print()
+
 
 """
-while loop main game
+While loop for the main game, for every correct guess that letter 
+will be added to the dashes to reveal the hidden word, every
+incorrect guess will lead to 1 more peice of the hangman to appear.
+Game over will reveal the hidden word.
 """
