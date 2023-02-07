@@ -54,6 +54,7 @@ print(len(words))
 """
 screen message for start of the game
 """
+
 print("Welcome player")
 print("The game is simple...")
 print("Correctly guess the hidden word and you win!")
@@ -62,6 +63,21 @@ print("Are you ready?")
 print("Let's begin!")
 print("")
 
+"""
+A function for the hangman display
+"""
 
-
-    
+def hangman(life):
+    """
+    function to print hangman to the terminal when
+    the player makes an incorrect guess, it will have a total of six
+    display picutures so the player will have 6 six attempts.
+    """
+    if life == 0:
+        print("+======+  ")
+        print("|      |  ")
+        print("|         ")
+        print("|         ")
+        print("|         ")
+        print("|         ")
+        print("==========")
