@@ -146,6 +146,13 @@ def letters():
     print()
 
 
+"""
+function that will only allow letters of the alphabet
+to be entered, error message to show so player can enter
+another letter
+"""
+
+
 def valid_entry():
     while True:
         player_guess = input("Enter a letter here: ").upper()
