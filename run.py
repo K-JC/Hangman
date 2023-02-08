@@ -157,7 +157,7 @@ Game over will reveal the hidden word.
 """
 
 while True:
-    print('=================================')
+    print('**************************')
     player_guess = input("Enter letter here: ").upper()
     if player_guess in words:
         index = 0
