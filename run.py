@@ -158,7 +158,7 @@ Game over will reveal the hidden word.
 
 while True:
     print('**************************')
-    player_guess = input("Enter letter here: ").upper()
+    player_guess = input("Enter a letter here: ").upper()
     if player_guess in words:
         index = 0
         for i in words:
@@ -170,5 +170,5 @@ while True:
     else:
         if player_guess not in wrong_guess:
             wrong_guess.append(player_guess)
-            print('haha that letter was wrong!The noose tightens..')
-            
+            print('Haha that letter was wrong!The noose is getting tighter..')
+            hangman(len(wrong_guess))
