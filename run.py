@@ -155,3 +155,20 @@ will be added to the dashes to reveal the hidden word, every
 incorrect guess will lead to 1 more peice of the hangman to appear.
 Game over will reveal the hidden word.
 """
+
+while True:
+    print('=================================')
+    player_guess = input("Enter letter here: ").upper()
+    if player_guess in words:
+        index = 0
+        for i in words:
+            if i == player_guess:
+                correct_guess[index] = player_guess
+            index += 1
+        letters()
+        print('Well done that was the right letter!')
+    else:
+        if player_guess not in wrong_guess:
+            wrong_guess.append(player_guess)
+            print('haha that letter was wrong!The noose tightens..')
+            
