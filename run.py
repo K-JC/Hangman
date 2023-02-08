@@ -146,6 +146,15 @@ def letters():
     print()
 
 
+def valid_entry():
+    while True:
+        player_guess = input("Enter a letter here: ").upper()
+        if not player_guess.isalpha():
+            print('Oops, not a letter, try again')
+        else:
+            return player_guess
+
+
 """
 While loop for the main game, for every correct guess that letter
 will be added to the dashes to reveal the hidden word, every
@@ -154,8 +163,8 @@ Game over will reveal the hidden word.
 """
 
 while True:
+    player_guess = valid_entry()
     print('**************************')
-    player_guess = input("Enter a letter here: ").upper()
     if player_guess in words:
         index = 0
         for i in words:
