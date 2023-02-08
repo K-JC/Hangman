@@ -47,9 +47,6 @@ random_words = [
 select a word at random from above list
 """
 words = random.choice(random_words).upper()
-# TESTING IT WORKS WILL REMOVE LATER
-print(words)
-print(len(words))
 
 """
 screen message for start of the game
