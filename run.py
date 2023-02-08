@@ -167,7 +167,7 @@ while True:
             index += 1
         letters()
         print('Well done that was the right letter!')
-    else:
+    else:    
         if player_guess not in wrong_guess:
             wrong_guess.append(player_guess)
             print('Haha that letter was wrong!The noose is getting tighter..')
@@ -175,7 +175,7 @@ while True:
         else:
             print('sorry you already tried that letter!:', player_guess)
         print(wrong_guess)
-                
+        
     if len(wrong_guess) > 5:
         print("Oh dear the Hangman has claimed another poor soul!")
         print("The correct word was ", words)
@@ -184,3 +184,4 @@ while True:
     if '_' not in correct_guess:
         print('Lucky you....you survived the Hangman..for today')
         break
+                
