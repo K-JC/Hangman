@@ -137,8 +137,6 @@ guess and the max number of lives
 """
 correct_guess = ['_'] * len(words)
 wrong_guess = []
-lives = 6 # remove later?
-
 
 def letters():
     """
