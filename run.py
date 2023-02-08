@@ -64,6 +64,7 @@ print("")
 A function for the hangman display
 """
 
+
 def hangman(life):
     """
     function to print hangman to the terminal when
@@ -135,6 +136,7 @@ guess and the max number of lives
 correct_guess = ['_'] * len(words)
 wrong_guess = []
 
+
 def letters():
     """
     function for correct guess position dashes
@@ -145,7 +147,7 @@ def letters():
 
 
 """
-While loop for the main game, for every correct guess that letter 
+While loop for the main game, for every correct guess that letter
 will be added to the dashes to reveal the hidden word, every
 incorrect guess will lead to 1 more peice of the hangman to appear.
 Game over will reveal the hidden word.
@@ -162,7 +164,7 @@ while True:
             index += 1
         letters()
         print('Well done that was the right letter!')
-    else:    
+    else:
         if player_guess not in wrong_guess:
             wrong_guess.append(player_guess)
             print('Haha that letter was wrong!The noose is getting tighter..')
