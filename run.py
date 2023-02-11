@@ -199,4 +199,6 @@ while True:
         print("Lucky you....you survived the Hangman..for today")
         break
 
-  
+    if len(player_guess) > 1:
+        print("Please enter one letter at time.")
+        
