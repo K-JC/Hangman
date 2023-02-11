@@ -6,6 +6,8 @@ Contents?
 
 # Features/future features
 
+
+
 The first messages the user will see when the page is loaded is the player welcome message. This welcomes the user to the game hangman and explains the rules. 
 Underneath this welcome message will be another message for the user which will say "Enter a letter here". This will give the user clear indication that they can now enter a letter and the game has begun.  
 
@@ -47,7 +49,7 @@ lowercase letters needed to change to upper in order for them to be uppercase wh
 
 
 # Validator testing
-Using Python CI Linter tester, the only error left that I after correcting the rest was "ERROR: W605 invalid escape sequence '\ '". Only the hangman displays with the backslash in were effected. 
+Using PEP8 Python Validator, the only error left that I after correcting the rest was "ERROR: W605 invalid escape sequence '\ '". Only the hangman displays with the backslash in were effected. 
 
 # Deployment (heroku)
 Following the steps that Code Insitute have shown me to do....

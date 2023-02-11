@@ -69,7 +69,7 @@ def hangman(life):
     """
     function to print hangman to the terminal when
     the player makes an incorrect guess, it will have a total of six
-    display picutures so the player will have 6 six attempts.
+    display pictures so the player will have 6 six attempts.
     """
     if life == 0:
         print("+======+  ")
@@ -166,7 +166,7 @@ def valid_entry():
 """
 While loop for the main game, for every correct guess that letter
 will be added to the dashes to reveal the hidden word, every
-incorrect guess will lead to 1 more peice of the hangman to appear.
+incorrect guess will lead to one more piece of the hangman to appear.
 Game over will reveal the hidden word.
 """
 
