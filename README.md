@@ -4,11 +4,13 @@ Hangman a guessing game. Guess the hidden word and you win, but if you can't gue
 
 Link to the live site can be found here - [Hangman](https://hang-man-game.herokuapp.com/)
 
+
+
 Contents?
 
 # Features/future features
-
-
+Screenshots 
+[]()
 
 The first messages the user will see when the page is loaded is the player welcome message. This welcomes the user to the game hangman and explains the rules. 
 Underneath this welcome message will be another message for the user which will say "Enter a letter here". This will give the user clear indication that they can now enter a letter and the game has begun.  
