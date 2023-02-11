@@ -2,6 +2,8 @@
 
 Hangman a guessing game. Guess the hidden word and you win, but if you can't guess the hidden word you loose. With only 6 lives this game is made a bit more challenging.
 
+Live site -
+
 Contents?
 
 # Features/future features
@@ -53,6 +55,17 @@ Using PEP8 Python Validator, the only error left that I after correcting the res
 
 # Deployment (heroku)
 Following the steps that Code Insitute have shown me to do....
+Enter a new line character to the end of my text input method otherwise this will not work on the mock terminal. 
+Enter pip3 freeze > requirements into the terminal. Nothing loads up into terminal because I have not used any other softwere. 
+Push any unsaved changes from my work to github. 
+From Heroku click create new app, name my app hang-man-game, select my region which is europe and create app.
+Once page is loaded go to settings tab, go to config vars and enter PORT to the key and 8000 to the value. This must be added because the mock terminal may fail and the project will not work.
+I haven't used a creds.json file so I will not be adding the config var that love sandwiches project did.
+Next I went down to the buildpacks section. I clicked add buildpack and selected python then click saved changes. I then clicked back on buildpack and selected node.js then clock saved changes. Python must be first and then node.js.
+Next I went to the deployment section and select my deployment method which is github. I confirmed i wanted to connect to github. I searched for my respotry name which is Hangman. I selceted this and then connected to link heroku app to my reposity code.
+Scrolled down and click deploy brance from the deploy a github branch. This way showed me the logs being run as my project was being deployed. 
+Once completed I could then click on veiw to view my deployed project on the terminal.
+It loaded with no errors. I then tested my project making sure everything was working as it should and it was.
 
 
 # Credits
