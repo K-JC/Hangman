@@ -135,6 +135,7 @@ guess and the max number of lives
 """
 correct_guess = ['_'] * len(words)
 wrong_guess = []
+player_guess = ""
 
 
 def letters():
@@ -157,7 +158,7 @@ def valid_entry():
     while True:
         player_guess = input("Enter a letter here: ").upper()
         if not player_guess.isalpha():
-            print('Oops, not a letter, try again')
+            print("Oops, not a letter, try again")
         else:
             return player_guess
 
@@ -179,14 +180,14 @@ while True:
                 correct_guess[index] = player_guess
             index += 1
         letters()
-        print('Well done that was the right letter!')
+        print("Well done that was the right letter!")
     else:
         if player_guess not in wrong_guess:
             wrong_guess.append(player_guess)
             print('Haha that letter was wrong!The noose is getting tighter..')
             hangman(len(wrong_guess))
         else:
-            print('sorry you already tried that letter!:', player_guess)
+            print("sorry you already tried that letter!:", player_guess)
         print(wrong_guess)
 
     if len(wrong_guess) > 5:
@@ -195,5 +196,7 @@ while True:
         break
 
     if '_' not in correct_guess:
-        print('Lucky you....you survived the Hangman..for today')
+        print("Lucky you....you survived the Hangman..for today")
         break
+
+  
