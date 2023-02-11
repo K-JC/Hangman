@@ -2,7 +2,7 @@
 
 Hangman a guessing game. Guess the hidden word and you win, but if you can't guess the hidden word you loose. With only 6 lives this game is made a bit more challenging.
 
-Live site -
+Link to the live site can be found here - [Hangman](https://hang-man-game.herokuapp.com/)
 
 Contents?
 
