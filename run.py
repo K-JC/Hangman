@@ -156,7 +156,7 @@ another letter
 
 def valid_entry():
     while True:
-        player_guess = input("Enter a letter here: ").upper()
+        player_guess = input("Enter a letter here: \n").upper()
         if not player_guess.isalpha():
             print("Oops, not a letter, try again")
         else:
