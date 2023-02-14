@@ -13,8 +13,6 @@ The link to the live site can be found here, enjoy!- [Hangman](https://hang-man-
 * [Credits](#credits)
 
 # Features
-ENTER SCREENSHOTS HERE
-
 ![Start up](assets/images/start-up-screen.png)
 
 The first messages the user will see when the page is loaded is the player welcome message. This welcomes the user to the game hangman and explains the rules. 
@@ -46,10 +44,9 @@ I would also like to add some visuals like a large Hangman title at the top of t
 
 
 # Testing
-The game was tested in the Github terminal while writing code and once ready for deployment was tested on the deployed site Heroku. Family and friends tested out the game on the live site. 
+The game was tested in the Github terminal while writing code and once ready for deployment was tested on the deployed site Heroku. Family and friends tested out the game on the live site. Tested on desktop, laptop and mobile devices using Chrome and Firefox.
 
 # Bugs
-
 * The word that was chosen at random was showing on the terminal. I had forgot to remove the print statment put in earlier and once removed the random word was no longer showing on the terminal. The user will not see the random word now this has been fixed.
 
 * Numbers and symbols were still allowed to be entered to the terminal and the user would loose a life. I fixed this by adding a function valid_entry and also placing this function in my main while loop. This now means that anything that is not a letter will not be accepted (no life will be lost) and a message will show telling the user that this is not a letter and that they should try again.
@@ -70,13 +67,13 @@ Using PEP8 Python Validator, the only error left that I after correcting the res
 
 # Deployment
 Following the steps that Code Insitute have shown.
-I Entered a new line character to the end of my text input method otherwise this will not work on the mock terminal. I enter pip3 freeze > requirements into the terminal. Nothing was loaded into the terminal because I have not used any other software. I then push any unsaved changes from my work to github.
-From Heroku I click create new app, I then named my app hang-man-game, I selected my region and then clicked create app.
-Once the page loaded I went into the settings tab, I went to the config vars section and entered PORT to the key and 8000 to the value (this was added because the mock terminal may fail and the project will not work if not entered). I haven't used a creds.json file so I will not be adding the config var that love sandwiches project did.
-I then scrolled down to the buildpacks section, I clicked add buildpack and selected python then click saved changes. I then clicked back on buildpack and selected node.js then click saved changes again. I made sure that Python was first and then node.js.
-Next I went to the deployment section and select my deployment method which is github. I confirmed that I wanted to connect to github. I searched for my respositry name which is Hangman. I selceted this and then connected to link the heroku app to my reposity code.
-I then scrolled down and clicked deploy branch from the deploy a github branch (this way showed me the logs being run as my project was being deployed). 
-Once completed I then clicked on view to view my deployed project on the terminal.
+* I Entered a new line character to the end of my text input method otherwise this will not work on the mock terminal. I enter pip3 freeze > requirements into the terminal. Nothing was loaded into the terminal because I have not used any other software. I then push any unsaved changes from my work to github.
+* From Heroku I click create new app, I then named my app hang-man-game, I selected my region and then clicked create app.
+* Once the page loaded I went into the settings tab, I went to the config vars section and entered PORT to the key and 8000 to the value (this was added because the mock terminal may fail and the project will not work if not entered). I haven't used a creds.json file so I will not be adding the config var that love sandwiches project did.
+* I then scrolled down to the buildpacks section, I clicked add buildpack and selected python then click saved changes. I then clicked back on buildpack and selected node.js then click saved changes again. I made sure that Python was first and then node.js.
+* Next I went to the deployment section and select my deployment method which is github. I confirmed that I wanted to connect to github. I searched for my respositry name which is Hangman. I selceted this and then connected to link the heroku app to my reposity code.
+* I then scrolled down and clicked deploy branch from the deploy a github branch (this way showed me the logs being run as my project was being deployed). 
+* Once completed I then clicked on view to view my deployed project on the terminal.
 It loaded with no errors. I then tested my project making sure everything was working as it should and it was.
 
 
