@@ -25,16 +25,16 @@ Entering a correct letter will result in a display message "Well done that was t
 
 ![Incorrect guess](assets/images/incorrect-letter.png)
 
-Entering an incorrect letters will result in the incorrect letter showing on the screen and the hangman piece to appear indicating the a life lost/wrong guess. Each letter wrong is another piece to the hangman display. The user will only have 6 attempts to guess the hidden word.
+Entering an incorrect letter will result in a piece of the hangman to appear which will also result in the loss of 1/6 lives which is then displayed on the interface.The incorrect letter will also be displayed for the user to see. Each letter wrong is another piece to the hangman display. The user will only have 6 attempts to guess the hidden word before the hangman is complete.
 
 ![Incorrect entry](assets/images/incorrect-entry.png)
 
-Entering a letter that the user has already got wrong will result in a message "sorry you already tried that letter" No life is lost, and the user can now choose another letter.
-Entering any number or symbol will result in an "oops, not a letter, try again" message. Entering more than one letter at a time will result in a message "please enter one letter at a time". This will not affect the user’s life count.
+Entering a letter that the user has already got wrong will result in a message, "sorry you already tried that letter". No life is lost, and the user can now choose another letter.
+Entering any number or symbol will result in an "oops, not a letter, try again" message.This will not affect the user’s life count. Entering more than one letter at a time will result in a message "please enter one letter at a time". 
 
 ![Game won](assets/images/win-game.png)
 
-Once all the correct letters have been entered and the hidden word has been revelled the message will print to the terminal with a winner message.
+Once all the correct letters have been entered and the hidden word has been revealed, the message will print to the terminal with a winner message.
 
 ![Game over](assets/images/gameover.png)
 
@@ -45,14 +45,14 @@ I would also like to add some visuals like a large Hangman title at the top of t
 
 
 # Testing
-The game was tested in the Github terminal while writing code and once ready for deployment was tested on the deployed site Heroku. Family and friends tested out the game on the live site. Tested on desktop, laptop and mobile devices using Chrome and Firefox.
+The game was tested in the Github terminal while writing code and once ready for deployment, was tested on the deployed site Heroku. Family and friends tested out the game on the live site. Tested on desktop, laptop and mobile devices using Chrome and Firefox.
 
 # Bugs
 * The word that was chosen at random was showing on the terminal. I had forgot to remove the print statement put in earlier and once removed the random word was no longer showing on the terminal. The user will not see the random word now this has been fixed.
 
 * Numbers and symbols were still allowed to be entered to the terminal and the user would lose a life. I fixed this by adding a function valid_entry and placing this function in my main while loop. This now means that anything that is not a letter will not be accepted (no life will be lost) and a message will show telling the user that this is not a letter and that they should try again.
 
-* Hangman display was not loading to terminal when wrong letter was entered, I fixed this by placing this inside a function and placing print statements around the displays and also adding hangman(len(wrong_guess) to my wrong guesses if statement. I had also forgot to place a break after my if statement for losing the game it wasn't ending when lost. 
+* Hangman display was not loading to the terminal when a wrong letter was entered, I fixed this by placing this inside a function and placing print statements around the displays and also adding hangman(len(wrong_guess) to my wrong guesses if statement. I had also forgot to place a break after my if statement for losing the game it wasn't ending when lost. 
 
 * Each turn was stacking on top of one another and looked a bit messy. I fixed this by adding a print statement with ==== at first but I didn't like how this looked so I changed it for *** instead, I found it looked better.
 
