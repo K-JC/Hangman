@@ -3,6 +3,7 @@
 Hangman is a guessing game, guess the hidden word and you win, but if you can't guess the hidden word you loose. With only 6 lives this game is made a bit more challenging. The user must choose carefully in order to reveal the hidden word before they loose all their lifes.
 
 The link to the live site can be found here, enjoy!- [Hangman](https://hang-man-game.herokuapp.com/)
+![Responsive](assets/images/all-screens.png)
 
 ## Table of Contents  
 * [Features](#features)  
@@ -40,7 +41,7 @@ Once all the correct letters have been entered and the hidden word has been reve
 Loosing the game will result in a lose message and a message which will tell the user what the correct hidden word was. So the user will always finish knowing what the hidden word was. 
 
 For future features I would like to add a lives count to the terminal so the user can keep tabs on how many lives they have left. 
-I would also like to add some visuals like a large Hangman title at the top of the terminal and once a game has been won or lost a "Winner" or "Gameover" display. I think that would make it look better and more visually pleasing as I feel it comes across as a little bland. 
+I would also like to add some visuals like a large Hangman title at the top of the terminal and once a game has been won or lost a "Winner" or "Gameover" display. I think that would make it look better and more visually pleasing as I feel it comes across as a little bland.
 
 
 # Testing
